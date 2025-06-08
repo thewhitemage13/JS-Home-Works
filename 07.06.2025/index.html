@@ -1,0 +1,118 @@
+<!-- task2.html -->
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+</head>
+
+<body>
+    <h2>Тест</h2>
+    <form>
+        <p>1. Яка столиця України?</p>
+        <label><input type="radio" name="q1" data-correct="true">Київ</label>
+        <label><input type="radio" name="q1">Львів</label>
+        <br><br>
+        <p>2. 2 + 2 = ?</p>
+        <label><input type="radio" name="q2" data-correct="true">4</label>
+        <label><input type="radio" name="q2">5</label>
+    </form>
+    <button onclick="checkTest()">Перевірити</button>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Стиль тексту</title>
+</head>
+
+<body>
+    <input type="text" id="inputText" placeholder="Текст">
+    <input type="color" id="color">
+    <input type="number" id="size" placeholder="Розмір">
+    <label><input type="checkbox" id="weight"> Жирний</label>
+    <button onclick="applyStyles()">Застосувати</button>
+    <p id="styledText"></p>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення книги</title>
+</head>
+
+<body>
+    <input id="name" placeholder="Ім'я"><br>
+    <input id="book" placeholder="Книга"><br>
+    <input id="quantity" type="number" placeholder="Кількість"><br>
+    <input id="date" type="date"><br>
+    <input id="address" placeholder="Адреса"><br>
+    <button onclick="submitOrder()">Замовити</button>
+    <p id="orderResult"></p>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Присутність</title>
+</head>
+
+<body>
+    <select id="group">
+        <option value="Група А">Група А</option>
+    </select>
+    <input id="lesson" placeholder="Пара">
+    <input id="topic" placeholder="Тема">
+    <div>
+        <label><input type="checkbox" name="student" value="Олег"> Олег</label>
+        <label><input type="checkbox" name="student" value="Ірина"> Ірина</label>
+    </div>
+    <button onclick="saveAttendance()">Зберегти</button>
+    <button onclick="showAttendance()">Показати</button>
+    <ul id="attendanceList"></ul>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання квитків</title>
+</head>
+
+<body>
+    <select id="route">
+        <option value="Київ-Львів">Київ-Львів</option>
+        <option value="Київ-Одеса">Київ-Одеса</option>
+    </select>
+    <input id="travelDate" type="date">
+    <div>
+        <label><input type="checkbox" name="seat" value="1A">1A</label>
+        <label><input type="checkbox" name="seat" value="1B">1B</label>
+    </div>
+    <button onclick="bookTickets()">Забронювати</button>
+    <button onclick="showTickets()">Переглянути</button>
+    <ul id="ticketList"></ul>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
