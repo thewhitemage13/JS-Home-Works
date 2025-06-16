@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Затримка виконання</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="icon" href="JavaScript-logo.png" />
+</head>
+<body>
+    <div class="container mt-5">
+        <section class="card p-4 shadow-sm">
+            <div class="mb-4">
+                <label for="timeoutInput" class="form-label fw-semibold">Вкажіть час затримки (у мілісекундах):</label>
+                <input type="number" class="form-control" id="timeoutInput" min="0" value="1000" />
+            </div>
+
+            <fieldset class="mb-4">
+                <legend class="form-label fw-semibold">Оберіть очікуваний результат:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="expectedResult" id="resultSuccess" value="success" />
+                    <label class="form-check-label" for="resultSuccess">Успішно</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="expectedResult" id="resultFailure" value="error" checked />
+                    <label class="form-check-label" for="resultFailure">Помилка</label>
+                </div>
+            </fieldset>
+
+            <div class="d-flex gap-3">
+                <button class="btn btn-primary flex-fill" id="runThenBtn">Запустити (.then)</button>
+                <button class="btn btn-success flex-fill" id="runAwaitBtn">Запустити (await)</button>
+            </div>
+
+            <div id="resultDisplay" class="mt-4 fs-5 text-center"></div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
